@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Jost } from "next/font/google";
+import { Alice, Yeseva_One } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
-const bodyFont = Jost({
+const bodyFont = Alice({
   variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400"],
 });
 
-const displayFont = Cormorant_Garamond({
+const displayFont = Yeseva_One({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {

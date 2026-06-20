@@ -3,36 +3,26 @@ type ContactSectionProps = {
 };
 
 const inputClassName =
-  "w-full border border-[color:var(--color-divider)] bg-transparent px-4 py-4 text-base text-[color:var(--color-ink)] outline-none transition-colors placeholder:text-[color:color-mix(in_srgb,var(--color-muted)_45%,white)] focus:border-[color:var(--color-ink)]";
+  "w-full border border-[color:var(--color-divider)] bg-white px-4 py-4 text-base text-[color:var(--color-ink)] outline-none transition-colors placeholder:text-[color:color-mix(in_srgb,var(--color-muted)_45%,white)] focus:border-[color:var(--color-ink-strong)]";
 
 export function ContactSection({ className = "" }: ContactSectionProps) {
   return (
     <section
-      className={`mx-auto flex w-full max-w-[120rem] flex-col gap-10 px-6 py-18 sm:px-10 lg:px-14 ${className}`.trim()}
+      className={`mx-auto flex w-full max-w-[92rem] flex-col gap-0 px-0 py-0 ${className}`.trim()}
     >
-      <div className="space-y-6 text-center">
-        <h2 className="font-serif text-5xl leading-none text-[color:var(--color-ink)] sm:text-6xl">
-          Let&apos;s Chat.
+      {/* Banner mirrors the homepage mockup and introduces the contact form. */}
+      <div className="bg-[#102a45] px-6 py-5 text-center sm:px-8">
+        <h2 className="font-serif text-[3.4rem] leading-none text-white sm:text-[4rem]">
+          Let&apos;s Chat!
         </h2>
-        <div className="mx-auto max-w-6xl space-y-5 text-left text-lg leading-8 text-[color:var(--color-muted)]">
-          <p>
-            Use the form below to contact us. To help us best service your
-            inquiry, include your company or agency name, what kind of
-            transportation or mobility services you provide and in what
-            location, a description of your transportation project goals, and
-            which of our service areas you&apos;re inquiring about. Please be as
-            detailed as possible.
-          </p>
-          <p>
-            For job opportunities, please email us your resume. We&apos;re always
-            looking for new and exceptional talent to lead the firm into
-            uncharted fields of practice.
-          </p>
-        </div>
+        <p className="mt-1 text-[1.05rem] leading-6 text-[color:var(--color-accent)]">
+          Complete the form below
+        </p>
       </div>
 
-      <form className="space-y-6" action="#">
-        <div className="grid gap-4 md:grid-cols-2">
+      {/* Inputs stay flat and minimal so the form reads like one clean block. */}
+      <form className="space-y-0 bg-[color:var(--color-background)]" action="#">
+        <div className="grid gap-2 md:grid-cols-2">
           <label className="space-y-2">
             <span className="block text-sm font-medium uppercase tracking-[0.08em] text-[color:var(--color-muted)]">
               First Name <span className="normal-case">(required)</span>
@@ -47,21 +37,21 @@ export function ContactSection({ className = "" }: ContactSectionProps) {
           </label>
         </div>
 
-        <label className="space-y-2">
+        <label className="space-y-2 block pt-2">
           <span className="block text-sm font-medium uppercase tracking-[0.08em] text-[color:var(--color-muted)]">
             Email Address <span className="normal-case">(required)</span>
           </span>
           <input type="email" name="email" required className={inputClassName} />
         </label>
 
-        <label className="space-y-2">
+        <label className="space-y-2 block pt-2">
           <span className="block text-sm font-medium uppercase tracking-[0.08em] text-[color:var(--color-muted)]">
             Company or Agency Name <span className="normal-case">(required)</span>
           </span>
           <input type="text" name="organization" required className={inputClassName} />
         </label>
 
-        <label className="space-y-2">
+        <label className="space-y-2 block pt-2">
           <span className="block text-sm font-medium uppercase tracking-[0.08em] text-[color:var(--color-muted)]">
             Location <span className="normal-case">(required)</span>
           </span>
@@ -74,7 +64,7 @@ export function ContactSection({ className = "" }: ContactSectionProps) {
           />
         </label>
 
-        <label className="space-y-2">
+        <label className="space-y-2 block pt-2">
           <span className="block text-sm font-medium uppercase tracking-[0.08em] text-[color:var(--color-muted)]">
             How Can We Help? <span className="normal-case">(required)</span>
           </span>
@@ -90,25 +80,15 @@ export function ContactSection({ className = "" }: ContactSectionProps) {
           />
         </label>
 
-        <div className="flex justify-center pt-2">
+        <div className="flex justify-center pt-4">
           <button
             type="submit"
-            className="min-w-40 border border-[color:var(--color-ink)] px-8 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-[color:var(--color-ink)] transition-colors hover:bg-[color:var(--color-ink)] hover:text-[color:var(--color-background)]"
+            className="min-w-40 border border-[color:var(--color-ink-strong)] px-8 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-[color:var(--color-ink-strong)] transition-colors hover:bg-[color:var(--color-ink-strong)] hover:text-white"
           >
             Submit
           </button>
         </div>
       </form>
-
-      <div className="space-y-6 pt-6 text-center">
-        <blockquote className="mx-auto max-w-6xl font-serif text-4xl leading-tight text-[color:var(--color-ink)] sm:text-5xl">
-          &ldquo;Providing people with transportation options gives them the
-          freedom to interact with the world.&rdquo;
-        </blockquote>
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[color:var(--color-accent)]">
-          Tolu Becks Oke
-        </p>
-      </div>
     </section>
   );
 }

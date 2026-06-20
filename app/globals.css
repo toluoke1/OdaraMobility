@@ -4,6 +4,7 @@
   --background: #f7f6f2;
   --foreground: #2f415d;
   --ink: #233556;
+  --ink-strong: #162a63;
   --muted: #4a5c78;
   --accent: #e67a59;
   --divider: #d9ddd8;
@@ -13,6 +14,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-ink: var(--ink);
+  --color-ink-strong: var(--ink-strong);
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-divider: var(--divider);
@@ -32,7 +34,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body), sans-serif;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 a {
@@ -42,4 +44,151 @@ a {
 ::selection {
   background: color-mix(in srgb, var(--accent) 24%, white);
   color: var(--ink);
+}
+
+@keyframes about-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
+.about-float {
+  animation: about-float 6.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+.about-float-delay-1 {
+  animation-delay: 0.9s;
+}
+
+.about-float-delay-2 {
+  animation-delay: 1.8s;
+}
+
+.about-placeholder {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.about-placeholder::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.26), transparent 18%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.06), transparent 42%);
+}
+
+.about-placeholder-grid {
+  position: absolute;
+  inset: 12% 10%;
+  border-radius: 1.5rem;
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.9) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.9) 1px, transparent 1px);
+  background-size: 2.25rem 2.25rem;
+}
+
+.about-placeholder-orb {
+  position: absolute;
+  right: 11%;
+  top: 12%;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 999px;
+  opacity: 0.34;
+  background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.08));
+  filter: blur(1px);
+}
+
+.about-placeholder-line {
+  position: absolute;
+  left: 11%;
+  right: 16%;
+  height: 0.7rem;
+  border-radius: 999px;
+  opacity: 0.7;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.about-placeholder-line-a {
+  top: 30%;
+}
+
+.about-placeholder-line-b {
+  top: 42%;
+  right: 27%;
+}
+
+.about-placeholder-line-c {
+  top: 54%;
+  right: 36%;
+}
+
+.about-placeholder-analytics {
+  background:
+    linear-gradient(125deg, rgba(34, 66, 168, 0.94), rgba(65, 130, 243, 0.86) 46%, rgba(18, 24, 47, 0.96)),
+    linear-gradient(180deg, #234db5, #0d1737);
+}
+
+.about-placeholder-forecast {
+  background:
+    radial-gradient(circle at 76% 28%, rgba(255, 235, 99, 0.95), transparent 16%),
+    linear-gradient(90deg, #0f6dd8 0 17%, #5bcf35 17% 34%, #8fde39 34% 51%, #f2d433 51% 68%, #e7862b 68% 84%, #c74a1f 84% 100%);
+}
+
+.about-placeholder-forecast .about-placeholder-grid {
+  opacity: 0.12;
+}
+
+.about-placeholder-behavior {
+  background:
+    radial-gradient(circle at 28% 72%, rgba(247, 206, 158, 0.28), transparent 15%),
+    linear-gradient(145deg, rgba(73, 37, 15, 0.96), rgba(169, 106, 57, 0.9) 48%, rgba(80, 46, 22, 0.94));
+}
+
+.about-placeholder-behavior .about-placeholder-orb {
+  box-shadow:
+    -4.5rem 1rem 0 -0.6rem rgba(255, 255, 255, 0.6),
+    -8.6rem 3.2rem 0 -1rem rgba(255, 255, 255, 0.44),
+    -2.1rem 5rem 0 -0.9rem rgba(255, 255, 255, 0.52),
+    2rem 3rem 0 -0.8rem rgba(255, 255, 255, 0.48);
+}
+
+.about-placeholder-project {
+  background:
+    radial-gradient(circle at 48% 62%, rgba(84, 215, 255, 0.9), transparent 14%),
+    linear-gradient(135deg, rgba(2, 11, 26, 0.98), rgba(20, 32, 56, 0.92) 50%, rgba(12, 19, 39, 0.98));
+}
+
+.about-placeholder-project .about-placeholder-line {
+  background: rgba(123, 221, 255, 0.82);
+}
+
+.about-placeholder-teaching {
+  background:
+    linear-gradient(180deg, rgba(231, 241, 248, 0.9), rgba(210, 219, 227, 0.48) 56%, rgba(40, 53, 64, 0.34)),
+    linear-gradient(135deg, #dce5ec, #adb9c3 42%, #536576);
+}
+
+.about-placeholder-planning {
+  background:
+    repeating-linear-gradient(28deg, rgba(224, 170, 81, 0.96) 0 0.34rem, transparent 0.34rem 2.5rem),
+    repeating-linear-gradient(-28deg, rgba(43, 68, 72, 0.96) 0 0.34rem, transparent 0.34rem 2.5rem),
+    linear-gradient(135deg, #24393d, #5b6a60 55%, #18272c);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-float,
+  .about-float-delay-1,
+  .about-float-delay-2 {
+    animation: none;
+  }
 }
