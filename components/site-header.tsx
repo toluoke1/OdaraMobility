@@ -9,24 +9,24 @@ const navigation = [
 export function SiteHeader() {
   return (
     <header className="border-b border-[color:var(--color-divider)]">
-      <div className="mx-auto grid min-h-24 w-full max-w-[120rem] grid-cols-[1fr_auto_1fr] items-center gap-6 px-6 sm:px-10 lg:px-14">
-        <div aria-hidden="true" />
+      <div className="mx-auto flex w-full max-w-[120rem] flex-col items-center gap-3 px-5 py-4 sm:px-8 lg:grid lg:min-h-24 lg:grid-cols-[1fr_auto_1fr] lg:gap-6 lg:py-0 lg:px-14">
+        <div aria-hidden="true" className="hidden lg:block" />
         <Link
           href="/"
-          className="justify-self-center text-center text-[1.95rem] uppercase tracking-[0.14em] text-[color:var(--color-ink)] transition-colors hover:text-[color:var(--color-accent)]"
+          className="text-center text-[1.45rem] uppercase tracking-[0.12em] text-[color:var(--color-ink)] transition-colors hover:text-[color:var(--color-accent)] sm:text-[1.65rem] lg:justify-self-center lg:text-[1.95rem] lg:tracking-[0.14em]"
         >
           Odara Mobility
         </Link>
         <nav
           aria-label="Primary"
-          className="justify-self-end text-sm font-medium tracking-[0.06em] text-[color:var(--color-muted)]"
+          className="text-[0.95rem] font-medium tracking-[0.06em] text-[color:var(--color-accent)] sm:text-[1rem] lg:justify-self-end lg:text-[1.2rem]"
         >
-          <ul className="flex items-center gap-6">
+          <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 lg:justify-end lg:gap-6">
             {navigation.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="transition-colors hover:text-[color:var(--color-accent)]"
+                  className="transition-colors hover:text-[color:var(--color-ink-strong)]"
                 >
                   {item.label}
                 </Link>

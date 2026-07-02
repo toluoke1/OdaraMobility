@@ -87,15 +87,15 @@ function FeatureCard({
   return (
     // Project highlight cards combine a representative image with a short summary.
     <article className="overflow-hidden rounded-[1.5rem] bg-white shadow-[0_18px_40px_rgba(17,24,39,0.08)]">
-      <div className="relative aspect-[1.3/1]">
+      <div className="relative aspect-[1.08/1] sm:aspect-[1.3/1]">
         <Image src={image} alt={alt} fill className="object-cover" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,17,30,0.08),rgba(10,17,30,0.34))]" />
       </div>
-      <div className="space-y-4 px-6 py-6">
-        <h3 className="font-serif text-[1.9rem] leading-[1.1] text-[color:var(--color-ink-strong)]">
+      <div className="space-y-3 px-5 py-5 sm:space-y-4 sm:px-6 sm:py-6">
+        <h3 className="font-serif text-[1.45rem] leading-[1.1] text-[color:var(--color-ink-strong)] sm:text-[1.9rem]">
           {title}
         </h3>
-        <p className="text-[1.05rem] leading-7 text-[color:var(--color-ink)]">
+        <p className="text-[0.98rem] leading-6 text-[color:var(--color-ink)] sm:text-[1.05rem] sm:leading-7">
           {body}
         </p>
       </div>
@@ -124,8 +124,8 @@ function CapabilityCard({
         />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,17,30,0.16),rgba(10,17,30,0.72))]" />
       </div>
-      <div className="absolute inset-x-0 bottom-0 p-5">
-        <h3 className="text-[1.35rem] leading-none text-white sm:text-[1.6rem]">
+      <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
+        <h3 className="text-[1.15rem] leading-none text-white sm:text-[1.6rem]">
           {title}
         </h3>
       </div>
@@ -135,17 +135,17 @@ function CapabilityCard({
 
 export default function ProjectsPage() {
   return (
-    <div className="mx-auto flex w-full max-w-[92rem] flex-col gap-14 px-6 pb-24 pt-10 sm:px-8 lg:px-10 lg:pt-14">
+    <div className="mx-auto flex w-full max-w-[92rem] flex-col gap-10 px-5 pb-20 pt-8 sm:gap-14 sm:px-8 sm:pb-24 sm:pt-10 lg:px-10 lg:pt-14">
       {/* Hero keeps the page summary and animated project/client counts together. */}
-      <section className="overflow-hidden rounded-[2rem] bg-[#141b23] px-6 py-10 sm:px-8 lg:px-10 lg:py-12">
-        <div className="space-y-8">
+      <section className="overflow-hidden rounded-[1.5rem] bg-[#141b23] px-5 py-8 sm:rounded-[2rem] sm:px-8 sm:py-10 lg:px-10 lg:py-12">
+        <div className="space-y-6 sm:space-y-8">
           <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--color-accent)]">
             Projects
           </p>
-          <h1 className="max-w-none font-serif text-[clamp(2.7rem,6.2vw,5rem)] leading-[1.04] text-white">
+          <h1 className="max-w-none font-serif text-[clamp(2.15rem,10vw,5rem)] leading-[1.04] text-white">
             Transportation projects grounded in research, equity, and delivery.
           </h1>
-          <p className="max-w-none text-[1.18rem] leading-9 text-white/72 lg:max-w-[74rem]">
+          <p className="max-w-none text-[1rem] leading-7 text-white/72 sm:text-[1.1rem] sm:leading-8 lg:max-w-[74rem] lg:text-[1.18rem] lg:leading-9">
             Odara Mobility brings together planning, demand modeling,
             behavioral research, and project delivery expertise across public
             transportation systems and mobility services.
@@ -160,7 +160,7 @@ export default function ProjectsPage() {
           <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--color-accent)]">
             Highlights
           </p>
-          <h2 className="font-serif text-[2.5rem] leading-none text-[color:var(--color-ink-strong)] sm:text-[3rem]">
+          <h2 className="font-serif text-[2rem] leading-none text-[color:var(--color-ink-strong)] sm:text-[2.45rem] lg:text-[3rem]">
             Explore our past transportation projects
           </h2>
         </div>
@@ -179,12 +179,12 @@ export default function ProjectsPage() {
       </section>
 
       {/* Capability grid translates the Steer-style inspiration into Odara's service areas. */}
-      <section className="space-y-8 rounded-[2rem] bg-[#181e25] px-6 py-8 sm:px-8 lg:px-10 lg:py-10">
+      <section className="space-y-8 rounded-[1.5rem] bg-[#181e25] px-5 py-7 sm:rounded-[2rem] sm:px-8 sm:py-8 lg:px-10 lg:py-10">
         <div className="space-y-3">
           <p className="text-sm uppercase tracking-[0.18em] text-[color:var(--color-accent)]">
             Capabilities
           </p>
-          <h2 className="max-w-4xl font-serif text-[2.5rem] leading-none text-white sm:text-[3rem]">
+          <h2 className="max-w-4xl font-serif text-[2rem] leading-none text-white sm:text-[2.45rem] lg:text-[3rem]">
             Explore our key transportation capabilities
           </h2>
         </div>

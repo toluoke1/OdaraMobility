@@ -11,8 +11,8 @@ export function ContactSection({ className = "" }: ContactSectionProps) {
       className={`mx-auto flex w-full max-w-[92rem] flex-col gap-0 px-0 py-0 ${className}`.trim()}
     >
       {/* Banner mirrors the homepage mockup and introduces the contact form. */}
-      <div className="bg-[#102a45] px-6 py-5 text-center sm:px-8">
-        <h2 className="font-serif text-[3.4rem] leading-none text-white sm:text-[4rem]">
+      <div className="bg-[#102a45] px-5 py-5 text-center sm:px-8">
+        <h2 className="font-serif text-[2.4rem] leading-none text-white sm:text-[3.2rem] lg:text-[4rem]">
           Let&apos;s Chat!
         </h2>
         <p className="mt-1 text-[1.05rem] leading-6 text-[color:var(--color-accent)]">
@@ -83,7 +83,7 @@ export function ContactSection({ className = "" }: ContactSectionProps) {
         <div className="flex justify-center pt-4">
           <button
             type="submit"
-            className="min-w-40 border border-[color:var(--color-ink-strong)] px-8 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-[color:var(--color-ink-strong)] transition-colors hover:bg-[color:var(--color-ink-strong)] hover:text-white"
+            className="min-w-40 border border-[color:var(--color-ink-strong)] px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-[color:var(--color-ink-strong)] transition-colors hover:bg-[color:var(--color-ink-strong)] hover:text-white sm:px-8 sm:py-4"
           >
             Submit
           </button>

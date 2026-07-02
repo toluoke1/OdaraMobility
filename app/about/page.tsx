@@ -6,12 +6,12 @@ import mentoringImage from "@/images/mentoring.jpeg";
 import mitLogo from "@/images/mit_logo.png";
 import mhcLogo from "@/images/mhc_logo.png";
 import projectManagementImage from "@/images/project_management.jpeg";
-import toluHeadshot from "@/images/Tolu Headshot.jpg.jpeg";
+import toluHeadshot from "@/images/tolu_headshot.jpeg";
 import transportationResearchImage from "@/images/transportation_research.jpeg";
 import umassLogo from "@/images/umass_logo.png";
 
 const history =
-  "After a decade and a half of working at a large transportation consulting firm and a mid-sized public transit agency, founder and principal Tolu Oke started Odara Mobility in 2019. Tolu's expertise includes demand modeling, cost-benefit analysis, safety and behavioral research, and transportation planning. Throughout her career, she has led and galvanized multi-agency teams to successfully deliver on project goals for public and private sector clients.";
+  "After 15 years of working at a large transportation consulting firm and a mid-sized public transit agency, founder and principal Tolu Oke started Odara Mobility in 2019. Odara Mobility specializes in demand modeling, cost-benefit analysis, safety and behavioral research, and transportation planning. Throughout her career, she has led and galvanized multi-agency teams to successfully deliver on project goals for public and private sector clients.";
 
 const founderBio =
   "Tolu has over 12 years of experience in solving complex problems and applying innovative and quantitative techniques to generate insights about transportation initiatives and their impacts on travel behavior, planning, and policy decisions. Her expertise includes impact and equity analysis, demand modeling, behavioral research, and transportation planning. Throughout her career, she has led and galvanized multi-agency teams to successfully deliver on project goals for public and private sector clients.";
@@ -149,7 +149,7 @@ function EducationItem({
         <Image src={logo} alt={`${school} logo`} fill className="object-contain p-1.5" />
       </div>
       <div className="space-y-1">
-        <h4 className="font-serif text-[1.45rem] leading-tight text-[color:var(--color-ink-strong)]">
+        <h4 className="font-serif text-[1.2rem] leading-tight text-[color:var(--color-ink-strong)] sm:text-[1.3rem]">
           {school}
         </h4>
         <p className="text-[1.05rem] leading-7 text-[color:var(--color-ink)]">
@@ -162,102 +162,102 @@ function EducationItem({
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto flex w-full max-w-[84rem] flex-col gap-10 px-6 pb-24 pt-4 sm:px-8 lg:px-10 lg:pt-6">
+    <div className="mx-auto flex w-full max-w-[84rem] flex-col gap-8 px-5 pb-20 pt-4 sm:gap-10 sm:px-8 lg:px-10 lg:pt-6">
       {/* Short intro block kept separate from the founder card for a simpler page rhythm. */}
       <section className="space-y-3">
-        <h1 className="font-serif text-[2.5rem] leading-none text-[color:var(--color-accent)] sm:text-[3rem]">
+        <h1 className="font-serif text-[2.1rem] leading-none text-[color:var(--color-accent)] sm:text-[2.5rem] lg:text-[3rem]">
           A Brief History
         </h1>
-        <p className="max-w-none text-[1.35rem] leading-[1.55] text-[color:var(--color-ink)] sm:text-[1.55rem]">
+        <p className="max-w-none text-[1.08rem] leading-[1.55] text-[color:var(--color-ink)] sm:text-[1.2rem] lg:text-[1.55rem]">
           {history}
         </p>
       </section>
 
       <section className="space-y-2">
-        <h2 className="font-serif text-[2.5rem] leading-none text-[color:var(--color-accent)] sm:text-[3rem]">
-          Meet the Founder
+        <h2 className="font-serif text-[2.1rem] leading-none text-[color:var(--color-accent)] sm:text-[2.5rem] lg:text-[3rem]">
+          Founder and Principal
         </h2>
 
-        {/* The founder card is split into two vertical tracks:
-            left for portrait/education, right for narrative/publications. */}
+        {/* Mobile stacks image, name, bio, then sections; desktop restores the two-column card. */}
         <div className="rounded-[1rem] border-[4px] border-[color:var(--color-ink-strong)] bg-transparent px-0 py-0">
-          <div className="grid gap-8 px-0 py-0 lg:grid-cols-[30rem_minmax(0,1fr)] lg:gap-10">
-            <div className="space-y-6 pt-0">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-tl-[0.7rem]">
+          <div className="grid gap-6 px-5 py-5 sm:px-8 sm:py-6 lg:grid-cols-[20rem_minmax(0,1fr)] lg:gap-10 lg:px-6">
+            <div className="space-y-0">
+              <div className="relative mx-auto aspect-[4/5] max-w-[15rem] overflow-hidden rounded-[0.7rem] sm:max-w-[17rem] lg:mx-0 lg:max-w-[20rem]">
                 <Image
                   src={toluHeadshot}
                   alt="Portrait of Tolu Ogunbekun (Becks) Oke"
                   fill
-                  sizes="(min-width: 1024px) 21rem, 100vw"
+                  sizes="(min-width: 1024px) 20rem, 100vw"
                   className="object-cover"
                 />
               </div>
-              <div className="bg-[#d95d00] px-5 py-5">
-                <p className="text-center font-serif text-[1.85rem] leading-[1.15] text-black">
-                  Tolu Ogunbekun (Becks) Oke
+            </div>
+
+            <div className="space-y-5 lg:pr-8">
+              <div className="bg-[color:var(--color-accent)] px-5 py-5">
+                <p className="text-center font-serif text-[1.45rem] leading-[1.15] text-black sm:text-[1.65rem] lg:text-right lg:text-[1.85rem]">
+                  Tolu Ogunbekun Oke
                 </p>
               </div>
 
-              <section className="space-y-6 px-6 pb-2 sm:px-8 lg:px-6">
-                <h3 className="font-serif text-[2rem] leading-none text-[color:var(--color-ink-strong)] sm:text-[2.15rem]">
-                  Education
-                </h3>
-                {/* Education entries intentionally mirror the publication column rhythm. */}
-                <div className="space-y-6">
-                  {education.map((item) => (
-                    <EducationItem
-                      key={`${item.school}-${item.degree}`}
-                      school={item.school}
-                      degree={item.degree}
-                      logo={item.logo}
-                    />
-                  ))}
-                </div>
-              </section>
-
-            </div>
-
-            <div className="space-y-8 px-6 pb-6 pt-6 sm:px-8 lg:px-0 lg:pr-8">
-              <p className="max-w-none text-[1.5rem] leading-[1.78] text-[color:var(--color-ink)] sm:text-[1.72rem]">
+              <p className="max-w-none text-[1.08rem] leading-[1.55] text-[color:var(--color-ink)] sm:text-[1.2rem] lg:text-[1.55rem]">
                 {founderBio}
               </p>
-
-              <section className="space-y-8 border-t border-[color:var(--color-divider)] pt-6">
-                <h3 className="font-serif text-[2rem] leading-none text-[color:var(--color-ink-strong)] sm:text-[2.15rem]">
-                  Publications &amp; Blogposts
-                </h3>
-                {/* Linked titles are highlighted inline so only the referenced work turns orange. */}
-                <div className="columns-1 gap-8 space-y-0 text-[1.05rem] leading-7 text-[color:var(--color-muted)] xl:columns-2">
-                  {publications.map((item, index) => (
-                    <p
-                      key={`${index}-${item.prefix}`}
-                      className="mb-4 break-inside-avoid-column"
-                    >
-                      {item.prefix}
-                      {item.linkedText ? (
-                        <a
-                          href={item.href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-[color:var(--color-accent)] transition-colors hover:text-[color:var(--color-ink-strong)]"
-                        >
-                          {item.linkedText}
-                        </a>
-                      ) : null}
-                      {item.suffix}
-                    </p>
-                  ))}
-                </div>
-              </section>
             </div>
           </div>
 
-          <div className="border-t border-[color:var(--color-divider)] px-6 pb-6 pt-5 sm:px-8">
+          <div className="grid gap-8 border-t border-[color:var(--color-divider)] px-5 py-5 sm:px-8 sm:py-6 lg:grid-cols-[24rem_minmax(0,1fr)] lg:gap-10 lg:px-6">
+            <section className="space-y-6">
+              <h3 className="font-serif text-[1.7rem] leading-none text-[color:var(--color-ink-strong)] sm:text-[1.9rem] lg:text-[2.15rem]">
+                Education
+              </h3>
+              <div className="space-y-5">
+                {education.map((item) => (
+                  <EducationItem
+                    key={`${item.school}-${item.degree}`}
+                    school={item.school}
+                    degree={item.degree}
+                    logo={item.logo}
+                  />
+                ))}
+              </div>
+            </section>
+
+            <section className="space-y-6">
+              <h3 className="font-serif text-[1.7rem] leading-none text-[color:var(--color-ink-strong)] sm:text-[1.9rem] lg:text-[2.15rem]">
+                  Publications &amp; Blogposts
+              </h3>
+              {/* Linked titles are highlighted inline so only the referenced work turns orange. */}
+              <div className="columns-1 gap-8 space-y-0 text-[1rem] leading-7 text-[color:var(--color-muted)] sm:text-[1.05rem] xl:columns-2">
+                {publications.map((item, index) => (
+                  <p
+                    key={`${index}-${item.prefix}`}
+                    className="mb-4 break-inside-avoid-column"
+                  >
+                    {item.prefix}
+                    {item.linkedText ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[color:var(--color-accent)] transition-colors hover:text-[color:var(--color-ink-strong)]"
+                      >
+                        {item.linkedText}
+                      </a>
+                    ) : null}
+                    {item.suffix}
+                  </p>
+                ))}
+              </div>
+            </section>
+          </div>
+
+          <div className="border-t border-[color:var(--color-divider)] px-5 pb-5 pt-4 sm:px-8 sm:pb-6 sm:pt-5">
             <div className="space-y-1">
-              <p className="font-serif text-[1.45rem] text-[color:var(--color-ink-strong)]">
+              <p className="font-serif text-[1.2rem] text-[color:var(--color-ink-strong)] sm:text-[1.45rem]">
                 Affiliated with:
               </p>
-              <p className="text-[1.05rem] leading-7 text-[color:var(--color-ink)] lg:whitespace-nowrap">
+              <p className="text-[1rem] leading-7 text-[color:var(--color-ink)] lg:whitespace-nowrap">
                 Transit Cooperative Research Program Project A-49 Panel on Fare
                 Policies, Structures, and Technologies
               </p>
@@ -268,7 +268,7 @@ export default function AboutPage() {
 
       <section className="pt-3">
         <div className="bg-[#102a45] px-6 py-4 text-center">
-          <h2 className="font-serif text-[2.7rem] leading-none text-white sm:text-[3.1rem]">
+          <h2 className="font-serif text-[2rem] leading-none text-white sm:text-[2.45rem] lg:text-[3.1rem]">
             Our Areas of Practice
           </h2>
         </div>
@@ -278,7 +278,7 @@ export default function AboutPage() {
           {practiceAreas.map((area) => (
             <article key={area.title} className={`text-center ${area.animationClass}`.trim()}>
               <div
-                className="group relative mx-auto aspect-[1.18/0.8] w-full max-w-[22rem] overflow-hidden"
+                className="group relative mx-auto aspect-[1.1/0.88] w-full max-w-[22rem] overflow-hidden sm:aspect-[1.18/0.8]"
                 style={{ borderRadius: "1.6rem 1.6rem 3.9rem 1.6rem" }}
               >
                 <Image
@@ -290,12 +290,12 @@ export default function AboutPage() {
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(9,16,28,0.04),rgba(9,16,28,0.12))]" />
                 <div className="absolute bottom-0 left-1/2 w-[80%] -translate-x-1/2 bg-[rgba(133,132,127,0.95)] px-4 py-3">
-                  <h3 className="font-serif text-[1.12rem] leading-[1.08] text-[color:var(--color-ink-strong)] sm:text-[1.22rem]">
+                  <h3 className="font-serif text-[1.02rem] leading-[1.08] text-[color:var(--color-ink-strong)] sm:text-[1.22rem]">
                     {area.title}
                   </h3>
                 </div>
               </div>
-              <p className="mx-auto mt-3 max-w-[23rem] text-[1.1rem] leading-[1.45] text-[color:var(--color-ink)] sm:text-[1.18rem]">
+              <p className="mx-auto mt-3 max-w-[23rem] text-[1rem] leading-[1.45] text-[color:var(--color-ink)] sm:text-[1.18rem]">
                 {area.body}
               </p>
             </article>
