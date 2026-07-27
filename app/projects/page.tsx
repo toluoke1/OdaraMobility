@@ -10,10 +10,10 @@ import railImage from "@/images/Rail.jpg";
 import busImage from "@/images/Bus.jpg";
 import transitImage from "@/images/Transit.jpg";
 import actual_perceivedsafety from "@/images/actual_perceivedsafety.png";
-import busclassificationFramework from "@/images/busclassificationFramework.png";
+import busclassificationFramework from "@/images/busclassificationframework.png";
 import farecappingImage from "@/images/farecapping.jpg";
 import ridecareImage from "@/images/ridecare.jpg";
-import bcrframeworkImage from "@/images/bcrframework.jpg";
+import bcrframeworkImage from "@/images/bcrframework.png";
 import buspurchasestrategyImage from "@/images/buspurchasestrategy.jpg";
 import { ProjectsMetrics } from "@/components/projects-metrics";
 
@@ -33,7 +33,7 @@ const projectHighlights = [
   {
     title: "Harnessing hybrid buses in the near term leads to faster transit decarbonization",
     body: "Introduced integrated decision-making and energy modeling framework to inform route and fleet deployment.",
-    image: buspurchasestrategyImage
+    image: buspurchasestrategyImage,
     alt: "Powertrain distribution across simulated futures",
   },
   {
