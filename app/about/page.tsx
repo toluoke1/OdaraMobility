@@ -1,13 +1,13 @@
 import Image, { StaticImageData } from "next/image";
-import behavioralResearchImage from "@/images/behavioral_research.jpeg";
+import behavioralResearchImage from "@/images/Behavioral Research_Stakeholder Engagement.jpg";
 import dataAnalyticsImage from "@/images/data_analytics.jpeg";
-import demandForecastingImage from "@/images/demand modeling and traveling forecasting.png";
+import demandForecastingImage from "@/images/Demand Modeling_Travel Forecasting.jpg";
 import mentoringImage from "@/images/mentoring.jpeg";
 import mitLogo from "@/images/mit_logo.png";
 import mhcLogo from "@/images/mhc_logo.png";
-import projectManagementImage from "@/images/project_management.jpeg";
+import proposalWritingImage from "@/images/Proposal Development_Grant Writing.jpg";
 import toluHeadshot from "@/images/tolu_headshot.jpeg";
-import transportationResearchImage from "@/images/transportation_research.jpeg";
+import transportationResearchImage from "@/images/Transportation Planning_Research.jpg";
 import umassLogo from "@/images/umass_logo.png";
 
 const history =
@@ -141,7 +141,7 @@ const practiceAreas = [
   {
     title: "Proposal Development & Grant Writing",
     body: "Secure funding by authoring targeted research proposals and federal grants for university and transit agency projects.",
-    image: projectManagementImage,
+    image: proposalWritingImage,
     imageAlt: "Project management concepts on a digital screen",
     animationClass: "about-float about-float-delay-2",
   },
