@@ -133,7 +133,7 @@ const practiceAreas = [
   },
   {
     title: "Behavioral Research & Stakeholder Engagement",
-    body: "Design stated-preference and customer surveys, and lead stakeholder engagement, to understand travel behavior and ensure representative input.,
+    body: "Design stated-preference and customer surveys, and lead stakeholder engagement, to understand travel behavior and ensure representative input.",
     image: behavioralResearchImage,
     imageAlt: "Group discussion bubbles representing stakeholder engagement",
     animationClass: "about-float about-float-delay-2",
