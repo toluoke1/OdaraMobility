@@ -112,28 +112,28 @@ const publications = [
 const practiceAreas = [
   {
     title: "Data Science & Analytics",
-    body: "Leverage advanced analytics to turn transportation data into mobility insights and support data-informed policy decisions.",
+    body: "Leverage advanced analytics to turn transportation data into mobility insights and support policy decisions.",
     image: dataAnalyticsImage,
     imageAlt: "Data analytics interface on screens",
     animationClass: "about-float",
   },
   {
     title: "Demand Modeling & Travel Forecasting",
-    body: "Build travel demand forecasting models to predict behavior under future scenarios and assess transportation project feasibility and impact.",
+    body: "Build travel demand forecasting models to predict behavior and assess transportation project feasibility and impact.",
     image: demandForecastingImage,
     imageAlt: "Map graphic representing travel demand forecasting",
     animationClass: "about-float about-float-delay-1",
   },
   {
     title: "Transportation Planning & Research",
-    body: "Lead quantitative and qualitative research to identify transportation trends and guide strategic planning for system improvements.",
+    body: "Develop quantitative and qualitative research to identify trends and guide strategic planning for system improvement.",
     image: transportationResearchImage,
     imageAlt: "Aerial transportation interchange",
     animationClass: "about-float",
   },
   {
     title: "Behavioral Research & Stakeholder Engagement",
-    body: "Design stated-preference and customer surveys, and lead stakeholder engagement, to understand travel behavior and ensure representative input.",
+    body: "Design stated-preference and customer surveys, and lead stakeholder engagement, to understand travel behavior.",
     image: behavioralResearchImage,
     imageAlt: "Group discussion bubbles representing stakeholder engagement",
     animationClass: "about-float about-float-delay-2",
