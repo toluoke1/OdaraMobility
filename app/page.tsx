@@ -32,11 +32,10 @@ export default function Home() {
 
           <div className="mt-10 w-full max-w-[78rem] space-y-3 sm:mt-14">
             <blockquote className="text-center text-[1.15rem] italic leading-[1.55] text-white sm:text-[1.45rem] lg:text-[2rem]">
-              &ldquo;Providing people with transportation options gives them the
-              freedom to interact with the world.&rdquo;
+              &ldquo;Transportation options give people the freedom to connect, access opportunities, and engage with the world around them.”.&rdquo;
             </blockquote>
             <p className="text-right font-serif text-[1.35rem] leading-none text-[color:var(--color-accent)] sm:text-[1.65rem] lg:text-[2.2rem]">
-              -Tolu Becks Oke
+              -Tolu Oke, Ph.D.
             </p>
           </div>
         </div>
