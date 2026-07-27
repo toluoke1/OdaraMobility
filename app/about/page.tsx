@@ -11,10 +11,10 @@ import transportationResearchImage from "@/images/transportation_research.jpeg";
 import umassLogo from "@/images/umass_logo.png";
 
 const history =
-  "After 15 years of working at a large transportation consulting firm and a mid-sized public transit agency, founder and principal Tolu Oke started Odara Mobility in 2019. Odara Mobility specializes in demand modeling, cost-benefit analysis, safety and behavioral research, and transportation planning. Throughout her career, she has led and galvanized multi-agency teams to successfully deliver on project goals for public and private sector clients.";
+  "After about a decade of working at a large transportation consulting firm and a mid-sized public transit agency, founder and principal Tolu Oke started Odara Mobility in 2019. Odara Mobility specializes in demand modeling, cost-benefit analysis, safety and behavioral research, and transportation planning. Throughout her career, she has led and galvanized multi-agency teams to successfully deliver on project goals for public and private sector clients.";
 
 const founderBio =
-  "Tolu has over 12 years of experience in solving complex problems and applying innovative and quantitative techniques to generate insights about transportation initiatives and their impacts on travel behavior, planning, and policy decisions. Her expertise includes impact and equity analysis, demand modeling, behavioral research, and transportation planning. Throughout her career, she has led and galvanized multi-agency teams to successfully deliver on project goals for public and private sector clients.";
+  "Tolu has over 15 years of experience in solving complex problems and applying innovative and quantitative techniques to generate insights about transportation initiatives and their impacts on travel behavior, planning, and policy decisions. Her expertise includes impact and equity analysis, demand modeling, behavioral research, and transportation planning. Throughout her career, she has led and galvanized multi-agency teams to successfully deliver on project goals for public and private sector clients.";
 
 const education = [
   {
@@ -41,25 +41,46 @@ const education = [
 
 const publications = [
   {
-    prefix:
-      "Oke T., Foote A., Tainter F., Oke I., Knodler M. (2025). Bus stop typology reveals crash risk environments. ",
+    prefix: "Oke T. (2026). Doctoral Dissertation ",
+    linkedText: "Investigating Pedestrian Safety Near Transit Bus Stops",
+    href: "https://scholarworks.umass.edu/",
+    suffix: "University of Massachusetts, Amherst.",
+  },
+  {
+    prefix: "Kostopoulou E., Oke T., Oke J., Christofa E. (2026). ",
+    linkedText: "A Scenario Discovery Approach to Transit Network Optimization for Improved Access in Areas of Persistent Poverty.",
+    href: "https://link.springer.com/article/10.1007/s42421-026-00167-3",
     suffix: "Data Science for Transportation.",
   },
   {
-    prefix:
-      "Arabi M., Oke T., Baker E., Oke I. (2025). Harnessing hybrid buses in the near-term leads to faster transit decarbonization. ",
+    prefix: "Oke T., Pate A., Tainter F., Oke J., Knodler M. (2025). ",
+    linkedText: "Bus stop typology reveals crash risk environments.",
+    href: "https://www.researchgate.net/publication/398081491_Bus_Stop_Typology_Reveals_Crash_Risk_Environments",
+    suffix: "Data Science for Transportation.",
+  },
+  {
+    prefix: "Arabi M., Oke T., Baker E., Oke J. (2025). ",
+    linkedText: "Harnessing hybrid buses in the near-term leads to faster transit decarbonization.",
+    href: "https://www.sciencedirect.com/science/article/pii/S2589004225018280",
     suffix: "iScience.",
   },
   {
-    prefix:
-      "Oke, A., Alkhatib, A., Almuhamf, I., Carruthers, M., Moody, A., Alam (2024). Rapid Screening Financial and Economic Evaluation Model for Intercity Rail: Application to the Kingdom of Saudi Arabia ",
-    suffix: "Annual Meeting.",
+    prefix: "Oke, A., Alkhatib, A., Almuhamf, I., Carruthers, M., Moody, A., Alam (2024). ",
+    linkedText: "Rapid Screening Financial and Economic Evaluation Model for Intercity Rail: Application to the Kingdom of Saudi Arabia.",
+    href: "https://onlinepubs.trb.org/onlinepubs/am/SessionsEvents.pdf",
+    suffix: "104th Transportation Research Board Annual Meeting.",
   },
   {
     prefix: "Oke T. (2023). ",
     linkedText: "Developing an Origin-Destination-Transfer (ODX) Model.",
     href: "https://sumcmic.org/developing-an-origin-destination-transfer-odx-model",
-    suffix: " Shared-Use Mobility Center.",
+    suffix: "Shared-Use Mobility Center.",
+  },
+  {
+    prefix: "Oke T., Dasgupta M., Ainbinder A., Shepard B. (2023). ",
+    linkedText: "PVTA RideCare-PV Program Evaluation Report.",
+    href: "https://www.nadtc.org/wp-content/uploads/PVTAFinal-RideCare-Report_20230728.pdf",
+    suffix: "Federal Transit Administration .",
   },
   {
     prefix: "Morrissey A., Oke T. (2022). ",
@@ -84,7 +105,7 @@ const publications = [
     prefix: "Ogunbekun T. Master's Thesis (2015). ",
     linkedText: "The impact of Amtrak performance in the Northeast Corridor.",
     href: "http://web.mit.edu/hsr-group/documents/OGUNBEKUN,%20Tolu_Thesis.pdf",
-    suffix: "",
+    suffix: "Massachusetts Institute of Technology",
   },
 ];
 
