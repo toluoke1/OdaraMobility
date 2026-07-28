@@ -87,7 +87,7 @@ function FeatureCard({
   return (
     // Project highlight cards combine a representative image with a short summary.
     <article className="overflow-hidden rounded-[1.5rem] bg-white shadow-[0_18px_40px_rgba(17,24,39,0.08)]">
-      <div className="relative aspect-[1.08/1] sm:aspect-[1.3/1]">
+      <div className="relative aspect-[1.08/1] sm:aspect-[1.5/1]">
         <Image src={image} alt={alt} fill className="object-cover" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,17,30,0.08),rgba(10,17,30,0.34))]" />
       </div>
