@@ -1,75 +1,96 @@
 import Image, { StaticImageData } from "next/image";
 import behavioralResearchImage from "@/images/behavioral_research.jpeg";
 import dataAnalyticsImage from "@/images/data_analytics.jpeg";
-import demandForecastingImage from "@/images/demand modeling and traveling forecasting.png";
 import mentoringImage from "@/images/mentoring.jpeg";
 import projectManagementImage from "@/images/project_management.jpeg";
 import transportationResearchImage from "@/images/transportation_research.jpeg";
-import urbanImage from "@/images/urban.jpg";
+import pedestrianImage from "@/images/pedestrianImage.jpg";
+import bicycleImage from "@/images/Cycle.jpg";
+import railImage from "@/images/Rail.jpg";
+import busImage from "@/images/Bus.jpg";
+import transitImage from "@/images/Transit.jpg";
+import actual_perceivedsafety from "@/images/actual_perceivedsafety.png";
+import busclassificationFramework from "@/images/busclassificationframework.png";
+import farecappingImage from "@/images/farecapping.jpg";
+import ridecareImage from "@/images/ridecare.jpg";
+import bcrframeworkImage from "@/images/bcrframework.png";
+import buspurchasestrategyImage from "@/images/buspurchasestrategy.jpg";
 import { ProjectsMetrics } from "@/components/projects-metrics";
 
 const projectHighlights = [
   {
-    title: "Connected Communities through Equitable Transit",
-    body: "Exploring racial and economic disparities in accessibility through spatial interaction models, equity-focused outreach, and community connection scenarios.",
-    image: urbanImage,
-    alt: "People moving through an urban plaza",
+    title: "Walking Defensively - Subjective and Objective Assessments of Safety",
+    body: "Paired large perception survey with a predictive crash-risk model and a concordance-discordance framework to compare actual and perceived safety.",
+    image: actual_perceivedsafety,
+    alt: "Actual and perceived safety diagram",
+  },
+  {
+    title: "Bus Stop Typology Reveals Crash Risk Environments",
+    body: "Developed bus stop safety typologies to predict crash risk and design targeted safety interventions.",
+    image: busclassificationFramework,
+    alt: "Bus typology classification framework",
+  },
+  {
+    title: "Harnessing hybrid buses in the near term leads to faster transit decarbonization",
+    body: "Introduced integrated decision-making and energy modeling framework to inform route and fleet deployment.",
+    image: buspurchasestrategyImage,
+    alt: "Powertrain distribution across simulated futures",
   },
   {
     title: "Fare-Capping Impact Analysis Using Mobile Ticket Data",
-    body: "Using account-linked mobile ticket data and demand modeling to forecast ridership, revenue, product switching, and equity impacts across rider groups.",
-    image: dataAnalyticsImage,
-    alt: "Data dashboards and analytics screens",
+    body: "Modeled account-linked mobile ticketing data to forecast ridership, revenue, product switching, and equity impacts to guide transit fare-capping policy.",
+    image: farecappingImage,
+    alt: "Total trips per customer week",
   },
   {
     title: "Transportation Access to Healthcare",
-    body: "Evaluating mobility management programs that reduce transportation barriers to care while addressing language, affordability, and wellbeing constraints.",
-    image: mentoringImage,
-    alt: "Collaborative planning and workshop setting",
+    body: "Evaluated mobility management programs to reduce transportation barriers to healthcare while addressing language, affordability, and wellbeing constraints.",
+    image: ridecareImage,
+    alt: "Ridecare outcome of appointments arranged",
   },
   {
-    title: "FRA CONceptual Network Connections Tool",
-    body: "Leading development of a planning tool that estimates ridership, revenue, and operating performance for proposed high-speed rail corridors and networks.",
-    image: transportationResearchImage,
-    alt: "Transportation interchange and network infrastructure",
+    title: "Demand, Financial and Economic Evaluation Model for Intercity Rail",
+    body: "Developed rapid-screening planning tool to estimate ridership, financial, and economic performance for proposed intercity passenger and freight rail networks.",
+    image: bcrframeworkImage,
+    alt: "Evaluation model framework diagram",
   },
 ];
 
 const capabilities = [
   {
-    title: "Active travel",
-    image: urbanImage,
-    alt: "Urban public space representing active travel",
+    title: "Pedestrians",
+    image: pedestrianImage,
+    alt: "Urban public space with pedestrians",
   },
   {
     title: "Rail",
-    image: transportationResearchImage,
+    image: railImage,
     alt: "Transportation corridor representing rail",
   },
   {
     title: "Bus",
-    image: demandForecastingImage,
-    alt: "Demand map representing bus systems",
+    image: busImage,
+    alt: "Jakarta bus systems",
   },
   {
-    title: "Transit",
-    image: dataAnalyticsImage,
-    alt: "Transit analytics and systems dashboard",
+    title: "Roads",
+    image: transportationResearchImage,
+    alt: "Road interchange and highway planning",
   },
   {
-    title: "Aviation",
-    image: behavioralResearchImage,
-    alt: "Conversation and engagement imagery used to represent aviation planning",
+    title: "Bicycles",
+    image: bicycleImage,
+    alt: "Cycle friendly road image",
   },
   {
     title: "Freight",
     image: projectManagementImage,
     alt: "Project systems image representing freight operations",
   },
-  {
-    title: "Roads",
-    image: transportationResearchImage,
-    alt: "Road interchange and highway planning",
+ {
+    title: "Transit",
+    image: transitImage,
+    alt: "Transit interchange stop",
   },
 ];
 
