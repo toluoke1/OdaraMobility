@@ -217,7 +217,7 @@ export default function AboutPage() {
             <div className="space-y-5 lg:pr-8">
               <div className="bg-[color:var(--color-accent)] px-5 py-5">
                 <p className="text-center font-serif text-[1.45rem] leading-[1.15] text-black sm:text-[1.65rem] lg:text-right lg:text-[1.85rem]">
-                  Tolu Ogunbekun Oke
+                  Tolu Oke, PhD
                 </p>
               </div>
 

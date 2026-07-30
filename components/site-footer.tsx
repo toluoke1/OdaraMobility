@@ -68,8 +68,8 @@ export function SiteFooter() {
               ))}
             </div>
             <address className="not-italic text-[1rem] leading-7 text-[color:var(--color-muted)] sm:text-lg sm:leading-8">
-              <a href="tel:+14133456362" className="transition-colors hover:text-[color:var(--color-ink)]">
-                (413) 345-6362
+              <a href="tel:+14133401546" className="transition-colors hover:text-[color:var(--color-ink)]">
+                (413) 340-1546
               </a>{" "}
               <span aria-hidden="true">|</span>{" "}
               <a
